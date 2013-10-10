@@ -114,5 +114,13 @@ provided by $app->config in a Mojolicious environment.
 
 L<Mojolicious>, L<Mojolicious::Guides>, L<http://mojolicio.us>.
 
+=head1 AUTHOR & COPYRIGHT
+
+Copyright 2013 
+
+Hugh Esco <hesco@campaignfoundations.com>
+
+Released under the Gnu Public License v2, copy included
+
 =cut
 
