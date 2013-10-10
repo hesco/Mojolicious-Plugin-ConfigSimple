@@ -16,7 +16,7 @@ NAME
     Mojolicious::Plugin::ConfigSimple - Config::Simple::Extended
 
 VERSION
-    Version 0.03
+    Version 0.04
 
     my $version = &Mojolicious::Plugin::ConfigSimple::version; will return
     the currently installed version numbers for the key dependent modules.
