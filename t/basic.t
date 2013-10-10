@@ -6,20 +6,26 @@ use Test::Mojo;
 use Test::Exception;
 use Data::Dumper;
 
-my $cfg;
+my ($config,$cfg);
 my $ini = 't/conf.d/config.ini';
 
 throws_ok 
-  { $cfg = plugin ( 'ConfigSimple' => { config_file => [ $ini ], } ) } 
+  { ($config, $cfg) = plugin ( 'ConfigSimple' => { config_file => [ $ini ], } ) } 
   qr/config_file key requires a SCALAR/, 
   'config_file key properly sanity checked';
 
 throws_ok 
-  { $cfg = plugin ( 'ConfigSimple' => { config_files => $ini, } ) } 
+  { ($config, $cfg) = plugin ( 'ConfigSimple' => { config_files => $ini, } ) } 
   qr/config_files key requires an ARRAYREF/, 
   'config_files key properly sanity checked';
 
-$cfg = plugin ( 'ConfigSimple' => { config_files => [ $ini ], } );
+$config = plugin ( 'ConfigSimple' => { config_files => [ $ini ], } );
+is_deeply($config, &cfg_vars,
+    'registering the plugin as a scalar returns expected data structure' );
+
+($config, $cfg) = plugin ( 'ConfigSimple' => { config_files => [ $ini ], } );
+is_deeply($config, &cfg_vars,
+    'registering the plugin as an array also returns an idiomatic config data structure' );
 
 isa_ok( $cfg, 'Config::Simple' );
 can_ok( $cfg, 'param' );
@@ -38,7 +44,7 @@ is_deeply( Config::Simple::Extended::get_stanzas( $cfg ),
     &cfg_get_stanzas,
     'Config::Simple::Extended::get_stanzas returns expected data structure' );
 
-# print Dumper \%{$cfg->get_block('db')};
+is($cfg->param("default.foo"),'bar', '->param() method works too.');
 
 note &Mojolicious::Plugin::ConfigSimple::version;
 
