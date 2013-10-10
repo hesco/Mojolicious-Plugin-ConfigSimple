@@ -1,0 +1,8 @@
+cpanfile
+cpanfile.snapshot
+lib/Mojolicious/Plugin/ConfigSimple.pm
+Makefile.PL
+MANIFEST
+set_env.sh
+t/basic.t
+t/conf.d/config.ini
