@@ -45,6 +45,11 @@
             "Mojolicious" : "0.00",
             "Test::Exception" : "0.32"
          }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Pod" : "1.48"
+         }
       }
    },
    "release_status" : "stable",
