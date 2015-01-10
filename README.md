@@ -18,7 +18,7 @@ NAME
 
 VERSION
 
-    Version 0.04
+    Version 0.05
 
     my $version = &Mojolicious::Plugin::ConfigSimple::version; 
         <-- will return the currently installed version numbers 

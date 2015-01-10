@@ -2,7 +2,7 @@ package Mojolicious::Plugin::ConfigSimple;
 use Mojo::Base 'Mojolicious::Plugin';
 use Config::Simple::Extended;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub register {
   my ($self, $app, $args) = @_;
