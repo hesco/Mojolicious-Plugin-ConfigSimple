@@ -41,7 +41,7 @@ is_deeply(\%{$cfg->get_block('db')},
     &cfg_get_block,
     '->get_block returns expected data structure' );
 
-is_deeply( Config::Simple::Extended::get_stanzas( $cfg ),
+is_deeply( { map{ $_ => 1 }@{ Config::Simple::Extended::get_stanzas( $cfg ) },
     &cfg_get_stanzas,
     'Config::Simple::Extended::get_stanzas returns expected data structure' );
 
@@ -52,7 +52,7 @@ note &Mojolicious::Plugin::ConfigSimple::version;
 done_testing();
 
 sub cfg_get_stanzas {
-  return [ qw( db default ) ];
+  return { db => 1, default => 1 };
 }
 
 sub cfg_get_block {
