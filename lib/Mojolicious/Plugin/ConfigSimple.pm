@@ -49,7 +49,7 @@ Mojolicious::Plugin::ConfigSimple - Config::Simple::Extended
 
 =head1 VERSION 
 
-Version 0.04
+Version 0.05
 
 my $version = &Mojolicious::Plugin::ConfigSimple::version;
 will return the currently installed version numbers for the 
@@ -116,7 +116,7 @@ L<Mojolicious>, L<Mojolicious::Guides>, L<http://mojolicio.us>.
 
 =head1 AUTHOR & COPYRIGHT
 
-Copyright 2013 
+Copyright 2013-2015
 
 Hugh Esco <hesco@campaignfoundations.com>
 
