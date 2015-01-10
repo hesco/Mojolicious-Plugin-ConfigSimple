@@ -4,7 +4,7 @@ Mojolicious::Plugin::ConfigSimple - Config::Simple::Extended
 
 # VERSION 
 
-Version 0.05
+Version 0.06
 
 my $version = &Mojolicious::Plugin::ConfigSimple::version;
 will return the currently installed version numbers for the 

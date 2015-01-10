@@ -54,7 +54,7 @@
          "web" : "https://github.com/hesco/Mojolicious-Plugin-ConfigSimple"
       }
    },
-   "version" : "0.05",
+   "version" : "0.06",
    "x_contributors" : [
       "Renee <reb@perl-services.de>",
       "hesco <hesco@campaignfoundations.com>"
