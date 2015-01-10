@@ -1,3 +1,4 @@
+use lib qw( lib local/lib/perl5 );
 use Mojo::Base -strict;
 
 use Test::More;
