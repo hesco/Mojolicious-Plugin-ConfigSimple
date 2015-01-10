@@ -8,20 +8,24 @@ especially: sri, batman, marcus, crab and buu; each of whom helped
 walk me back from dead-ends on the way here and apologies to anyone 
 I missed in these acknowledgements; I offer for your consideration:
 
-https://github.com/hesco/Mojolicious-Plugin-ConfigSimple
-http://search.cpan.org/~hesco/Mojolicious-Plugin-ConfigSimple-0.01/ 
-    <-- PAUSE coming soon, url unconfirmed, still waiting on the indexer
+    https://github.com/hesco/Mojolicious-Plugin-ConfigSimple
+    http://search.cpan.org/~hesco/Mojolicious-Plugin-ConfigSimple-0.01/ 
+        <-- PAUSE coming soon, url unconfirmed, still waiting on the indexer
 
 NAME
+
     Mojolicious::Plugin::ConfigSimple - Config::Simple::Extended
 
 VERSION
+
     Version 0.04
 
-    my $version = &Mojolicious::Plugin::ConfigSimple::version; will return
-    the currently installed version numbers for the key dependent modules.
+    my $version = &Mojolicious::Plugin::ConfigSimple::version; 
+        <-- will return the currently installed version numbers 
+            for the key dependent modules.
 
 SYNOPSIS
+
       # Mojolicious
       my $ini = '/etc/myapp/config.ini';
       my ($config, $cfg) = $self->plugin('ConfigSimple' => { config_files => [ $ini ] } );
@@ -30,6 +34,7 @@ SYNOPSIS
       my ($config, $cfg) = $plugin 'ConfigSimple' => { config_file => $ini };
 
 DESCRIPTION
+
     Mojolicious::Plugin::ConfigSimple is a Mojolicious plugin. It is a very
     simple wrapper around Config::Simple::Extended, which in turn wraps
     Config::Simple. Those two modules fully document their uses and
@@ -41,6 +46,7 @@ DESCRIPTION
     structure is returned if invoked in scalar context.
 
 METHODS
+
     Mojolicious::Plugin::ConfigSimple inherits all methods from
     Mojolicious::Plugin and implements the following new ones.
 
