@@ -78,10 +78,12 @@ METHODS
     $app->config in a Mojolicious environment.
 
 SEE ALSO
+
     Mojolicious, Mojolicious::Guides, <http://mojolicio.us>.
 
 AUTHOR & COPYRIGHT
-    Copyright 2013 
+
+    Copyright 2013-2015
     Hugh Esco <hesco@campaignfoundations.com>
     Released under the Gnu Public License v2, copy included
 
